@@ -62,7 +62,7 @@ app.delete("/usuarios/:id", async (req, res) => {
     },
   });
 
-  res.status(203).json({ message: "Usuário moggado com Sucesso!" });
+  res.status(203).json({ message: "Usuário moggado com Sucesso!" }); // Não sobra nada pra quem é deletado
 });
 
 app.listen(3000);

@@ -3,6 +3,7 @@ import cors from 'cors';
 import { PrismaClient } from "./generated/prisma/index.js";
 
 const prisma = new PrismaClient();
+const port = process.env.PORT || 3000;
 
 const app = express();
 app.use(express.json());
@@ -65,7 +66,7 @@ app.delete("/usuarios/:id", async (req, res) => {
   res.status(203).json({ message: "Usuário moggado com Sucesso!" }); // Não sobra nada pra quem é deletado
 });
 
-app.listen(3000);
+app.listen(port);
 
 /* 
 Para ciar uma rota de comunicação entre Front e Back, preciso de duas coisas:

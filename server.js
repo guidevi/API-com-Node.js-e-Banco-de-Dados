@@ -7,7 +7,7 @@ const port = process.env.PORT || 3000;
 
 const app = express();
 app.use(express.json());
-app.use(cors())
+app.use(cors());
 
 app.post("/usuarios", async (req, res) => {
   await prisma.user.create({

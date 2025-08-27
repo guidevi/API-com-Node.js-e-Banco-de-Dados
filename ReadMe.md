@@ -1,6 +1,6 @@
 ### Projeto: API REST com Node.js, Express e MongoDB (via Prisma)
 
-### https://api-com-node-js-e-banco-de-dados.onrender.com(API em Deploy)
+### https://api-com-node-js-e-banco-de-dados.onrender.com (API em Deploy)
 
 ### Sobre o projeto
 
